@@ -1,0 +1,29 @@
+{
+    "orgName": "Salesforce Data Pipelines Workshop SFDX",
+    "description": "Scratch org config for Data Pipelines Workshop",
+    "edition" : "Developer",
+    "country": "US",
+    "adminEmail": "ttse@salesforce.com",
+    "features" : [
+        "SalesUser",
+        "ServiceUser",
+        "ServiceCloud",
+        "MarketingUser",
+        "DataProcessingEngine",
+        "EnableSetPasswordInApi"
+    ],
+    "settings": {
+          "lightningExperienceSettings": {
+              "enableS1DesktopEnabled": true
+          },
+          "securitySettings": {
+            "enableAuditFieldsInactiveOwner": true
+          },
+          "analyticsSettings": {
+            "sonicEnabled":true,
+            "enableSnowflakeOutputConnector":true,
+            "enableSalesforceOutputConnector": true,
+            "enableTableauHyperOutputConnector": true
+          }
+      }
+  }
