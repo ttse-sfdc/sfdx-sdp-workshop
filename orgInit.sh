@@ -27,7 +27,7 @@ sfdx force:data:record:create -s Lead -v "LastName='Sample Lead' Company='Sample
 sfdx force:data:record:create -s Contact -v "LastName='Sample Contact'"
 
 # #upload any Analytics datasets
-sfdx shane:analytics:dataset:upload -f data/analytics/Customer_Comments.csv -m data/analytics/Customer_Comments.json -n "Customer Comments"
+# sfdx shane:analytics:dataset:upload -f data/analytics/Customer_Comments.csv -m data/analytics/Customer_Comments.json -n "Customer Comments"
 
 #clean up
 rm -rf sfdx_temp

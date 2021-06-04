@@ -2,3 +2,4 @@
 .sfdx
 package-lock.json
 data/.DS_Store
+sfdx_temp
