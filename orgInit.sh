@@ -4,8 +4,13 @@ mkdir sfdx_temp
 #create scratch org
 sfdx force:org:create -s -f config/project-scratch-def.json -d 14 -s -w 60
 
+#apply security settins
+#sfdx force:source:deploy -m Settings:Security
+
 #push custom fields
 sfdx force:source:push -f
+
+sfdx force:user:permset:assign --permsetname AllowAuditFieldsInactiveOwner
 
 #prep unique Username in User csv
 sed "s/{TIMESTAMP}/$(date "+%Y%m%d%H%M%S")/g" data/core/User.csv > sfdx_temp/User_Load.csv
