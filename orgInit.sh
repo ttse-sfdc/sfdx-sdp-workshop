@@ -5,7 +5,7 @@ mkdir sfdx_temp
 sfdx force:org:create -s -f config/project-scratch-def.json -d 14 -s -w 60
 
 #apply security settins
-sfdx force:source:deploy -m Settings:Security
+#sfdx force:source:deploy -m Settings:Security
 
 #push custom fields
 sfdx force:source:push -f
