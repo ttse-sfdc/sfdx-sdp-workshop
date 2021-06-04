@@ -13,6 +13,9 @@
         "EnableSetPasswordInApi"
     ],
     "settings": {
+          "accountSettings": {
+            "enableRelateContactsToMultipleAccounts": true
+          },
           "lightningExperienceSettings": {
               "enableS1DesktopEnabled": true
           },
